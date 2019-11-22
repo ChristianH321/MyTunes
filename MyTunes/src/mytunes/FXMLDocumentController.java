@@ -27,6 +27,8 @@ public class FXMLDocumentController implements Initializable {
         label.setText("Hello World!");
     }
     
+    // hello
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

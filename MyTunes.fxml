@@ -29,6 +29,6 @@
             <Image url="@speaker_bold_convert-512.png" />
          </image>
       </ImageView>
-      <Slider fx:id="Volume" layoutX="6.0" layoutY="184.0" prefHeight="14.0" prefWidth="250.0" />
+      <Slider fx:id="Volume" layoutX="6.0" layoutY="184.0" prefHeight="14.0" prefWidth="257.0" />
    </children>
 </AnchorPane>

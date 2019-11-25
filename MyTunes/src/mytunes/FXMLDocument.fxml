@@ -8,6 +8,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -26,38 +27,50 @@
             <Image url="@../../../Next.png" />
          </image>
       </ImageView>
-      <Label layoutX="480.0" layoutY="47.0" prefHeight="18.0" prefWidth="35.0" text="Filter" />
+      <Label layoutX="466.0" layoutY="43.0" prefHeight="27.0" prefWidth="45.0" text="Filter" textFill="#1945e8">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
       <ImageView accessibleRole="BUTTON" fitHeight="51.0" fitWidth="67.0" layoutX="14.0" layoutY="112.0">
          <image>
             <Image url="@../../../speaker_bold_convert-512.png" />
          </image>
       </ImageView>
       <Slider fx:id="Volume" layoutX="93.0" layoutY="126.0" prefHeight="24.0" prefWidth="157.0" />
-      <Label layoutX="21.0" layoutY="174.0" prefHeight="18.0" prefWidth="53.0" text="Playlists" />
+      <Label layoutX="14.0" layoutY="175.0" prefHeight="27.0" prefWidth="67.0" text="Playlists" textFill="#4f33ee">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
       <ListView layoutX="14.0" layoutY="199.0" prefHeight="267.0" prefWidth="200.0" />
       <ListView layoutX="219.0" layoutY="199.0" prefHeight="267.0" prefWidth="200.0" />
       <ListView layoutX="494.0" layoutY="194.0" prefHeight="267.0" prefWidth="200.0" />
-      <Label layoutX="219.0" layoutY="175.0" prefHeight="18.0" prefWidth="106.0" text="Songs on Playlist" />
-      <Label layoutX="494.0" layoutY="166.0" text="Songs" />
-      <Button layoutX="642.0" layoutY="516.0" mnemonicParsing="false" text="Close" />
-      <Button layoutX="14.0" layoutY="503.0" mnemonicParsing="false" text="New..." />
-      <Button layoutX="74.0" layoutY="503.0" mnemonicParsing="false" text="Edit..." />
-      <Button layoutX="146.0" layoutY="503.0" mnemonicParsing="false" text="Delete" />
-      <Button layoutX="639.0" layoutY="466.0" mnemonicParsing="false" text="Delete" />
-      <Button layoutX="572.0" layoutY="466.0" mnemonicParsing="false" text="Edit..." />
-      <Button layoutX="491.0" layoutY="466.0" mnemonicParsing="false" text="New..." />
-      <Button layoutX="368.0" layoutY="479.0" mnemonicParsing="false" text="Delete" />
+      <Label layoutX="220.0" layoutY="175.0" prefHeight="27.0" prefWidth="141.0" text="Songs on Playlist" textFill="#2132ee">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="494.0" layoutY="167.0" prefHeight="27.0" prefWidth="54.0" text="Songs" textFill="#1732e8">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="619.0" layoutY="525.0" mnemonicParsing="false" text="Close" textFill="#f21a1a" />
+      <Button layoutX="14.0" layoutY="479.0" mnemonicParsing="false" text="New..." textFill="#f50a0a" />
+      <Button layoutX="76.0" layoutY="479.0" mnemonicParsing="false" text="Edit..." textFill="#f20f0f" />
+      <Button layoutX="146.0" layoutY="479.0" mnemonicParsing="false" text="Delete" textFill="#ee0c0c" />
+      <Button layoutX="634.0" layoutY="479.0" mnemonicParsing="false" text="Delete" textFill="#f51313" />
+      <Button layoutX="556.0" layoutY="479.0" mnemonicParsing="false" text="Edit..." textFill="#e11414" />
+      <Button layoutX="491.0" layoutY="479.0" mnemonicParsing="false" text="New..." textFill="#f21616" />
+      <Button layoutX="368.0" layoutY="479.0" mnemonicParsing="false" text="Delete" textFill="#f51111" />
       <ImageView accessibleRole="BUTTON" fitHeight="35.0" fitWidth="45.0" layoutX="435.0" layoutY="215.0">
          <image>
             <Image url="@../../../download.png" />
          </image>
       </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="35.0" fitWidth="33.0" layoutX="215.0" layoutY="474.0" rotate="90.6">
+      <ImageView accessibleRole="BUTTON" fitHeight="35.0" fitWidth="33.0" layoutX="221.0" layoutY="474.0" rotate="90.6">
          <image>
             <Image url="@../../../download.png" />
          </image>
       </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="35.0" fitWidth="33.0" layoutX="256.0" layoutY="474.0" rotate="-91.5">
+      <ImageView accessibleRole="BUTTON" fitHeight="35.0" fitWidth="33.0" layoutX="264.0" layoutY="474.0" rotate="-91.5">
          <image>
             <Image url="@../../../download.png" />
          </image>
@@ -68,7 +81,10 @@
             <Image url="@../../../Search%20Icon.png" />
          </image>
       </ImageView>
-      <Label layoutX="341.0" layoutY="2.0" prefHeight="24.0" prefWidth="54.0" text="MyTunes" textAlignment="JUSTIFY" />
+      <Label layoutX="290.0" layoutY="-1.0" prefHeight="53.0" prefWidth="150.0" text="MyTunes" textAlignment="JUSTIFY" textFill="#f50c0c">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
       <ImageView accessibleRole="BUTTON" fitHeight="18.0" fitWidth="22.0" layoutX="683.0" layoutY="5.0">
          <image>
             <Image url="@../../../Close%20Icon.png" />

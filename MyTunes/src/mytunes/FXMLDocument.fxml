@@ -85,6 +85,5 @@
          </image>
       </ImageView>
       <TextField layoutX="274.0" layoutY="100.0" prefHeight="26.0" prefWidth="214.0" text="(Song name) is Playing" />
-      <Button layoutX="393.0" layoutY="151.0" mnemonicParsing="false" text="Button" />
    </children>
 </AnchorPane>

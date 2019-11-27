@@ -7,7 +7,10 @@ package mytunes;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -16,6 +19,9 @@ import javafx.fxml.Initializable;
  */
 public class NewEditPlaylistController implements Initializable {
 
+    @FXML
+    private TextField fieldForNamingPlaylist;
+
     /**
      * Initializes the controller class.
      */
@@ -23,5 +29,9 @@ public class NewEditPlaylistController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void inputName(ActionEvent event) {
+    }
     
 }

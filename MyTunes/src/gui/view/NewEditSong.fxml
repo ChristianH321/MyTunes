@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytunes.NewEditSongController">
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.NewEditSongController">
    <children>
       <ComboBox layoutX="259.0" layoutY="162.0" prefHeight="26.0" prefWidth="78.0" />
       <Label layoutX="246.0" layoutY="7.0" prefHeight="46.0" prefWidth="119.0" text="New/Edit Song" textFill="#f50303">

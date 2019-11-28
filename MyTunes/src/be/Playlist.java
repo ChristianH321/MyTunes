@@ -119,6 +119,7 @@ public class Playlist {
      * 
      * @param song The song to check.
      * @param true if song is on playlist.
+     * @return false if song is not on playlist. 
      */
     
     public boolean isSongOnTracklist(Song song) {

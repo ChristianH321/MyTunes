@@ -5,6 +5,8 @@
  */
 package be;
 
+import bll.util.TimeConverter;
+
 /**
  *
  * @author chris

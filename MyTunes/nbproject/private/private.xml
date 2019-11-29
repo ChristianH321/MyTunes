@@ -3,18 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/bll/BllFacade.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/NewEditPlaylist.fxml</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/NewEditSong.fxml</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/MyTunes.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/be/Playlist.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/PlaylistDAO.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/mock/PlaylistDAO.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/FXMLDocument.fxml</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/DbConnectionProvider.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/bll/BllManager.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/PlaylistSongsDAO.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/bll/util/TimeConverter.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/controller/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/DalFacade.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/SongDAO.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/be/Song.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/DalController.java</file>
         </group>
     </open-files>
 </project-private>

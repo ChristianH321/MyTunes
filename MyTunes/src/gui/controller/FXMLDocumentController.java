@@ -92,6 +92,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void addsSongToPlaylist(MouseEvent event) {
+        
     }
 
     @FXML

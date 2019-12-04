@@ -5,11 +5,15 @@
  */
 package gui.controller;
 
+import be.Song;
+import gui.model.model;
 import java.net.URL;
+import java.util.EventObject;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -18,6 +22,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.MediaPlayer.Status;
+import javafx.stage.Stage;
 
 /**
  *
@@ -99,6 +105,24 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void clickPlay(MouseEvent event) {
+        if(mediaPlayer == null) {
+            Song songToPlay = model.getSong();
+            if(songToPlay != null) {
+                playSong(songToPlay, PlayingMode.SONG_LIST);
+                
+            }
+            else
+            {
+                Stage currentStage = (Stage)((Node)((EventObject) event).getSource()).getScene().getWindow();
+                warningDisplayer.displayError(currentStage, "Cannot play a song", "Your list of songs is empty");
+            }
+        }
+        else if(mediaPlayer.getStatus().equals(Status.PLAYING)){
+            stopSong();
+        }
+        else {
+            resumeSong();
+        }
     }
 
     @FXML

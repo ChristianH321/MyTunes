@@ -10,7 +10,10 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -20,13 +23,23 @@ import javafx.scene.control.TextField;
 public class NewEditSongController implements Initializable {
 
     @FXML
-    private TextField songTitleEdit;
+    private ComboBox<?> btnDragDownCategories;
     @FXML
-    private TextField editNewArtist;
+    private TextField fieldForEditingSongTitle;
     @FXML
-    private TextField settingTime;
+    private TextField FieldForEditingArtist;
     @FXML
-    private TextField editingFile;
+    private TextField FieldEditingLengthOfSong;
+    @FXML
+    private TextField FieldToDisplayFilePath;
+    @FXML
+    private Button btnShowListOfCategories;
+    @FXML
+    private Button btnSaveSong;
+    @FXML
+    private Button btnCancelEditSong;
+    @FXML
+    private Button fileChooser;
 
     /**
      * Initializes the controller class.
@@ -37,19 +50,71 @@ public class NewEditSongController implements Initializable {
     }    
 
     @FXML
-    private void newEditSong(ActionEvent event) {
+    private void clickDragsDown(MouseEvent event) {
     }
 
     @FXML
-    private void editNewArtist(ActionEvent event) {
+    private void dragsDownCategories(ActionEvent event) {
     }
 
     @FXML
-    private void settingTime(ActionEvent event) {
+    private void clickToEditSongTitle(MouseEvent event) {
     }
 
     @FXML
-    private void editingFile(ActionEvent event) {
+    private void editsSongTitle(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickEditArtistName(MouseEvent event) {
+    }
+
+    @FXML
+    private void editsArtistName(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickEditLengthOfSong(MouseEvent event) {
+    }
+
+    @FXML
+    private void editsLengthOfSong(ActionEvent event) {
+    }
+
+    @FXML
+    private void displaysFilePath(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickDisplayMoreCategories(MouseEvent event) {
+    }
+
+    @FXML
+    private void displaysMoreCategories(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickSaveSong(MouseEvent event) {
+    }
+
+    @FXML
+    private void savesSong(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickCancelEditSong(MouseEvent event) {
+    }
+
+    @FXML
+    private void cancelsEditSong(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickToOpenWindowToChooseFile(MouseEvent event) {
+    }
+
+    @FXML
+    private void choosesSongFiles(ActionEvent event) {
     }
     
 }

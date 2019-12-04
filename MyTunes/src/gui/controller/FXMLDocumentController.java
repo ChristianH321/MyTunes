@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Slider;
@@ -26,39 +27,55 @@ public class FXMLDocumentController implements Initializable {
     
     private Label label;
     @FXML
-    private ImageView playButton;
-    @FXML
-    private ImageView previousSongButton;
-    @FXML
-    private ImageView nextSongButton;
-    @FXML
-    private ImageView soundOnAndOff;
-    @FXML
-    private Slider Volume;
-    @FXML
-    private ListView<?> playlistList;
-    @FXML
     private ListView<?> songsOnPlaylistList;
     @FXML
     private ListView<?> songList;
     @FXML
-    private ImageView addSongToPlaylist;
+    private ImageView btnPlaySong;
     @FXML
-    private ImageView movesSongUp;
+    private ImageView btnPreviousSong;
     @FXML
-    private ImageView movesSongDown;
+    private ImageView btnNextSong;
     @FXML
-    private TextField searchField;
+    private ImageView btnSoundOnAndOff;
     @FXML
-    private ImageView searchButton;
+    private Slider sliderVolume;
     @FXML
-    private ImageView shutDownButton;
+    private ListView<?> playLists;
     @FXML
-    private ImageView maximizeButton;
+    private Button btnCloseProgram;
     @FXML
-    private ImageView minimizeButton;
+    private Button btnNewPlaylist;
     @FXML
-    private TextField displaysSongPlaying;
+    private Button btnEditPlaylist;
+    @FXML
+    private Button btnDeletePlaylist;
+    @FXML
+    private Button btnDeleteSong;
+    @FXML
+    private Button btnEditSong;
+    @FXML
+    private Button btnAddNewSong;
+    @FXML
+    private Button btnDeleteSongsOnPlaylist;
+    @FXML
+    private ImageView btnMoveSongtoPlaylist;
+    @FXML
+    private ImageView btnMoveSongUp;
+    @FXML
+    private ImageView btnMoveSongDown;
+    @FXML
+    private TextField btnSearchField;
+    @FXML
+    private ImageView btnSearch;
+    @FXML
+    private ImageView btnExitWindow;
+    @FXML
+    private ImageView btnMaximize;
+    @FXML
+    private ImageView btnMinimize;
+    @FXML
+    private TextField fieldDisplaySong;
     
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -73,66 +90,132 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void Space(KeyEvent event) {
     }
-
     @FXML
-    private void Play(MouseEvent event) {
+    private void Searching(ActionEvent event) {
+    }
+    @FXML
+    private void displaysSong(ActionEvent event) {
     }
 
     @FXML
-    private void previousSong(MouseEvent event) {
+    private void clickPlay(MouseEvent event) {
     }
 
     @FXML
-    private void nextSong(MouseEvent event) {
+    private void clickPreviousSong(MouseEvent event) {
     }
 
     @FXML
-    private void soundOnAndOff(MouseEvent event) {
-    }
-
-    @FXML
-    private void addsSongToPlaylist(MouseEvent event) {
+    private void clickNextSong(MouseEvent event) {
         
     }
 
     @FXML
-    private void movesSongUp(MouseEvent event) {
+    private void clickSoundOnAndOff(MouseEvent event) {
     }
 
     @FXML
-    private void movesSongDown(MouseEvent event) {
+    private void dragVolume(MouseEvent event) {
     }
 
     @FXML
-    private void clearButton(MouseEvent event) {
+    private void clickClosingProgram(MouseEvent event) {
     }
 
     @FXML
-    private void Searching(ActionEvent event) {
+    private void closesProgram(ActionEvent event) {
     }
 
     @FXML
-    private void filterActive(MouseEvent event) {
+    private void clickNewPlaylist(MouseEvent event) {
     }
 
     @FXML
-    private void search(MouseEvent event) {
+    private void opensNewEditWindow(ActionEvent event) {
     }
 
     @FXML
-    private void shutsDown(MouseEvent event) {
+    private void clickEditPlaylist(MouseEvent event) {
     }
 
     @FXML
-    private void maximizes(MouseEvent event) {
+    private void editsPlaylist(ActionEvent event) {
     }
 
     @FXML
-    private void minimizes(MouseEvent event) {
+    private void clickDeletePlaylist(MouseEvent event) {
     }
 
     @FXML
-    private void displaysSong(ActionEvent event) {
+    private void deletesPlaylist(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickDeletesSong(MouseEvent event) {
+    }
+
+    @FXML
+    private void deletesSong(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickEditsSongs(MouseEvent event) {
+    }
+
+    @FXML
+    private void editsSong(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickAddsSong(MouseEvent event) {
+    }
+
+    @FXML
+    private void addsSong(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickDeleteSongsOnPlaylist(MouseEvent event) {
+    }
+
+    @FXML
+    private void deletesSongsOnPlaylist(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickAddSongToPlaylist(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickMoveSongUp(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickMoveSongDown(MouseEvent event) {
+    }
+
+    @FXML
+    private void releaseClear(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickFilterActive(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickSearch(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickExitWindow(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickMaximize(MouseEvent event) {
+    }
+
+    @FXML
+    private void clickMinimize(MouseEvent event) {
     }
     
 }

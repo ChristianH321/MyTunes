@@ -10,7 +10,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -21,6 +23,10 @@ public class NewEditPlaylistController implements Initializable {
 
     @FXML
     private TextField fieldForNamingPlaylist;
+    @FXML
+    private Button btnCancel;
+    @FXML
+    private Button btnSaveNewPlaylist;
 
     /**
      * Initializes the controller class.
@@ -31,7 +37,27 @@ public class NewEditPlaylistController implements Initializable {
     }    
 
     @FXML
-    private void inputName(ActionEvent event) {
+    private void clickToTypeName(MouseEvent event) {
+    }
+
+    @FXML
+    private void writeNameOfPlaylist(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickCancelToAddNewPlaylist(MouseEvent event) {
+    }
+
+    @FXML
+    private void cancelsAddingNewPlaylist(ActionEvent event) {
+    }
+
+    @FXML
+    private void clickSaveNewPlaylist(MouseEvent event) {
+    }
+
+    @FXML
+    private void savesNewPlaylist(ActionEvent event) {
     }
     
 }

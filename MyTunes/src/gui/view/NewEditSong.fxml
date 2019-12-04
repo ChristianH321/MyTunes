@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.NewEditSongController">
    <children>
-      <ComboBox layoutX="259.0" layoutY="162.0" prefHeight="26.0" prefWidth="78.0" />
+      <ComboBox fx:id="btnDragDownCategories" layoutX="259.0" layoutY="162.0" onAction="#dragsDownCategories" onMouseClicked="#clickDragsDown" prefHeight="26.0" prefWidth="78.0" />
       <Label layoutX="246.0" layoutY="7.0" prefHeight="46.0" prefWidth="119.0" text="New/Edit Song" textFill="#f50303">
          <font>
             <Font size="18.0" />
@@ -20,13 +20,13 @@
       <Label layoutX="177.0" layoutY="166.0" text="Category:" textFill="#0930f2" />
       <Label layoutX="179.0" layoutY="226.0" text="Time:" textFill="#0327ee" />
       <Label layoutX="181.0" layoutY="277.0" text="File:" textFill="#0626f5" />
-      <TextField fx:id="songTitleEdit" layoutX="260.0" layoutY="80.0" onAction="#newEditSong" />
-      <TextField fx:id="editNewArtist" layoutX="260.0" layoutY="118.0" onAction="#editNewArtist" />
-      <TextField fx:id="settingTime" layoutX="260.0" layoutY="222.0" onAction="#settingTime" />
-      <TextField fx:id="editingFile" layoutX="260.0" layoutY="273.0" onAction="#editingFile" />
-      <Button layoutX="365.0" layoutY="162.0" mnemonicParsing="false" text="More..." textFill="#f50505" />
-      <Button layoutX="527.0" layoutY="396.0" mnemonicParsing="false" text="Save" textFill="#f80303" />
-      <Button layoutX="456.0" layoutY="396.0" mnemonicParsing="false" text="Cancel" textFill="#f20303" />
-      <Button layoutX="430.0" layoutY="273.0" mnemonicParsing="false" text="Choose..." textFill="#f80303" />
+      <TextField fx:id="fieldForEditingSongTitle" layoutX="260.0" layoutY="80.0" onAction="#editsSongTitle" onMouseClicked="#clickToEditSongTitle" />
+      <TextField fx:id="FieldForEditingArtist" layoutX="260.0" layoutY="118.0" onAction="#editsArtistName" onMouseClicked="#clickEditArtistName" />
+      <TextField fx:id="FieldEditingLengthOfSong" layoutX="260.0" layoutY="222.0" onAction="#editsLengthOfSong" onMouseClicked="#clickEditLengthOfSong" />
+      <TextField fx:id="FieldToDisplayFilePath" layoutX="260.0" layoutY="273.0" onAction="#displaysFilePath" />
+      <Button fx:id="btnShowListOfCategories" layoutX="365.0" layoutY="162.0" mnemonicParsing="false" onAction="#displaysMoreCategories" onMouseClicked="#clickDisplayMoreCategories" text="More..." textFill="#f50505" />
+      <Button fx:id="btnSaveSong" layoutX="527.0" layoutY="396.0" mnemonicParsing="false" onAction="#savesSong" onMouseClicked="#clickSaveSong" text="Save" textFill="#f80303" />
+      <Button fx:id="btnCancelEditSong" layoutX="456.0" layoutY="396.0" mnemonicParsing="false" onAction="#cancelsEditSong" onMouseClicked="#clickCancelEditSong" text="Cancel" textFill="#f20303" />
+      <Button fx:id="fileChooser" layoutX="430.0" layoutY="273.0" mnemonicParsing="false" onAction="#choosesSongFiles" onMouseClicked="#clickToOpenWindowToChooseFile" text="Choose..." textFill="#f80303" />
    </children>
 </AnchorPane>

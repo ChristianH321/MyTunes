@@ -98,8 +98,7 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void clickPlay(MouseEvent event) {
-        
+    private void clickPlay(MouseEvent event) {   
     }
 
     @FXML
@@ -107,8 +106,7 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void clickNextSong(MouseEvent event) {
-        
+    private void clickNextSong(MouseEvent event) {       
     }
 
     @FXML

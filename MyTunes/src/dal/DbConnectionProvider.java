@@ -18,43 +18,27 @@ import java.util.Properties;
  *
  * @author chris
  */
-public class DbConnectionProvider {
-    
-    private static final String PROP_FILE = "data/connectionInfo.settings";
+public class DbConnectionProvider
+{
+
+    private static final String PROP_FILE = "database.setttings";
     private SQLServerDataSource ds;
     
-    /**
-     * creates a connection with the database.
-     */
-    
-    public DbConnectionProvider() {
-        
-        try {
-            
-            Properties databaseProperties = new Properties();
-            databaseProperties.load(new FileInputStream(PROP_FILE));
-            ds = new SQLServerDataSource();
-            ds.setServerName(databaseProperties.getProperty("10.176.111.31"));
-            ds.setDatabaseName(databaseProperties.getProperty("ProjectMyTunesDB"));
-            ds.setUser(databaseProperties.getProperty("CSe19B_17"));
-            ds.setPassword(databaseProperties.getProperty("CSe19B_17"));
-        }
-        catch(IOException e) {
-            
-            // To Do
-        }
+    public DbConnectionProvider() throws IOException
+    {
+        Properties databaseProperties = new Properties();
+        databaseProperties.load(new FileInputStream(PROP_FILE));
+        ds = new SQLServerDataSource();
+        ds.setServerName(databaseProperties.getProperty("10.176.111.31"));
+        ds.setDatabaseName(databaseProperties.getProperty("ProjectMyTunesDB"));
+        ds.setUser(databaseProperties.getProperty("CSe19B_17"));
+        ds.setPassword(databaseProperties.getProperty("CSe19B_17"));
     }
     
-    /**
-     * Returns Connection object which is able to
-     * provide informations about database.
-     * 
-     * @return The Connection with database.
-     * @throws SQLServerException if connection with database cannot be established.
-     */
-    
-    public Connection getConnection() throws SQLServerException {
-        
-        return (Connection) ds.getConnection();
+    public java.sql.Connection getConnection() throws SQLServerException
+    {
+        return ds.getConnection();
     }
+    
 }
+

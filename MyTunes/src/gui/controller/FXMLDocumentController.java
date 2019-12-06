@@ -5,6 +5,10 @@
  */
 package gui.controller;
 
+import be.Song;
+import dal.daos.exceptions.Exceptions;
+import gui.model.Model;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -29,7 +33,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private ListView<?> songsOnPlaylistList;
     @FXML
-    private ListView<?> songList;
+    private ListView<Song> songList;
     @FXML
     private ImageView btnPlaySong;
     @FXML
@@ -77,6 +81,15 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField fieldDisplaySong;
     
+    private Model model;
+
+    public FXMLDocumentController() throws IOException, Exceptions {
+        model = new Model();
+    }
+    
+    
+    
+    
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
@@ -84,7 +97,7 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+       songList.setItems(model.getAllSongs());
     }    
 
     @FXML

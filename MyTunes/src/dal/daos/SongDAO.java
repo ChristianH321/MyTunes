@@ -27,16 +27,16 @@ public class SongDAO {
 
     public SongDAO() throws IOException
     {
-        connectionPool = DbConnectionProvider.getInstance();
+        connectionPool = new DbConnectionProvider();
     }
 
-    @Override
     public Song createSong (String title, String artist, String category, int length, String path) throws Exceptions
     {
         String sql = "INSERT INTO Songs (title, artist, category, length, path) VALUES(?,?);";
-        Connection con = connectionPool.checkOut(); // <<< Using the object pool here <<<
-        try (PreparedStatement st = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS))
+         // <<< Using the object pool here <<<
+        try (Connection con = connectionPool.getConnection())
         {
+            PreparedStatement st = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             st.setString(1, title);
             st.setString(2, artist);
             st.setString(3, category);
@@ -54,25 +54,23 @@ public class SongDAO {
         } catch (SQLException ex)
         {
             throw new Exceptions("Could not create song.", ex);
-        } finally
-        {
-            connectionPool.checkIn(con);// <<< Using the object pool here <<<
         }
     }
 
-    @Override
+    
     public void deleteSong (Song song) throws Exceptions
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
+    
     public List<Song> getAllSongs() throws Exceptions
     {
         List<Song> songs = new ArrayList<>();
-        Connection con = connectionPool.checkOut();
-        try (Statement statement = con.createStatement();)
+        
+        try (Connection con = connectionPool.getConnection())
         {
+            Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM Songs;");
             while (rs.next())
             {
@@ -89,19 +87,16 @@ public class SongDAO {
         } catch (SQLException ex)
         {
             throw new Exceptions("Could not get all songs from database", ex);
-        } finally
-        {
-            connectionPool.checkIn(con);
-        }
+        } 
     }
 
-    @Override
+    
     public Song getSong(int id) throws Exceptions
     {
-        return songs;
+        return null;
     }
 
-    @Override
+    
     public void updateSong(Song song) throws Exceptions
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

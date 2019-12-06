@@ -5,18 +5,21 @@
         <group>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/NewEditPlaylist.fxml</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/controller/NewEditPlaylistController.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/exceptions/Exceptions.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/MyTunes.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/FXMLDocument.fxml</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/DbConnectionProvider.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/controller/NewEditSongController.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/SongDAO.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/be/Song.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/DalController.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/NewEditSong.fxml</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/be/Playlist.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/mock/PlaylistDAO.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/bll/util/TimeConverter.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/controller/FXMLDocumentController.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/ObjectPool.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/model/model.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/JDBCConnectionPool.java</file>
         </group>
     </open-files>
 </project-private>

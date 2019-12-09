@@ -149,7 +149,16 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void opensNewEditWindow(ActionEvent event) {
+    private void opensNewEditWindow(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/view/NewEditPlaylist.fxml"));
+        Parent z = loader.load();
+        NewEditPlaylistController nepc = loader.getController();
+        
+        Scene scene = new Scene(z);
+        Stage s = new Stage();
+        s.setScene(scene);
+        s.show();
+        
     }
 
     @FXML
@@ -193,7 +202,7 @@ public class FXMLDocumentController implements Initializable {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/view/NewEditSong.fxml"));
         Parent p = loader.load();
         NewEditSongController ctrl = loader.getController();
-        ctrl.
+        
         Scene scene = new Scene(p);
         Stage s = new Stage();
         s.setScene(scene);

@@ -7,6 +7,7 @@ package bll;
 
 import be.Song;
 import dal.daos.SongDAO;
+import dal.daos.dalController;
 import dal.daos.exceptions.Exceptions;
 import java.io.IOException;
 import java.util.List;
@@ -16,6 +17,10 @@ import java.util.List;
  * @author chris
  */
 public class BllManager {
+
+    public static void deleteSong(Song song) throws Exceptions, Exceptions, Exceptions {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     private SongDAO songs;
     
@@ -25,6 +30,11 @@ public class BllManager {
     
     public List<Song> getAllSongs() throws Exceptions {
         return songs.getAllSongs();
+    }
+    
+    public void deleteSong(Song song) {
+        
+        dalController.deleteSong(song);
     }
     
 }

@@ -24,10 +24,12 @@ import java.util.List;
 public class SongDAO {
     
     private final DbConnectionProvider connectionPool;
+    private PlaylistSongsDAO playlistSongsDao;
 
     public SongDAO() throws IOException
     {
         connectionPool = new DbConnectionProvider();
+        playlistSongsDao = new PlaylistSongsDAO();
     }
 
     public Song createSong (String title, String artist, String category, int length, String path) throws Exceptions
@@ -58,9 +60,16 @@ public class SongDAO {
     }
 
     
-    public void deleteSong (Song song) throws Exceptions
+    public void deleteSong (Song song) throws Exceptions, SQLException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        playlistSongsDao.deleteSongFromAllPlaylist(song);
+        String sqlStatement = "DELETE FROM Songs WHERE id=?";
+        try(Connection con = connector.getConnection();
+                PreparedStatement statement = con.prepareStatement(sqlStatement))
+        {
+            statement.setInt(1, song.getId());
+            statement.execute();
+        }
     }
 
     

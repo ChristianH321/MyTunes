@@ -183,6 +183,20 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void deletesSong(ActionEvent event) {
+        
+        Song selectedSong = songList.getSelectionModel().getSelectedItem();
+        
+        if(clickDeletesSong(event)) {
+            
+            model.deleteSong(selectedSong);
+            songList.getSelectionModel().clearSelection();
+            btnMoveSongtoPlaylist.setDisable(true);
+            btnEditSong.setDisable(true);
+            btnDeleteSong.setDisable(true);
+            
+        }
+        
+        
     }
 
     @FXML

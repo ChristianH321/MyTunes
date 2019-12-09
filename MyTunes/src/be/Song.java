@@ -92,7 +92,7 @@ public class Song {
     
     @Override
     public String toString() {
-        return title;
+        return artist + " - " + title;
     }
 
 

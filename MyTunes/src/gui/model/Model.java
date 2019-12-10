@@ -20,7 +20,7 @@ import javafx.collections.ObservableList;
 public class Model {
     
     private ObservableList<Song> songList;
-    private ObservableList<Playlist> songsOnPlaylistList;
+    private ObservableList<Playlist> PlaylistList;
     private BllManager manager;
     private ObservableList<Song> playlistSongs;
     
@@ -38,37 +38,37 @@ public class Model {
     
     public void deleteSong(Song song) throws Exceptions {
         
-        BllManager.deleteSong(song);
+        manager.deleteSong(song);
         deleteSongFromAllPlaylist(song);
         songList.remove(song);
     }
 
     private void deleteSongFromAllPlaylist(Song song) {
         
-        for(int i = 0; i < songsOnPlaylistList.size(); i++) {
+   /*     for(int i = 0; i < PlaylistList.size(); i++) {
             
-            for (int j = 0; j < songsOnPlaylistList.get(i).getTracklist().size(); j++) {
+            for (int j = 0; j < PlaylistList.get(i).getTracklist().size(); j++) {
                 
-                if(song.getId() == songsOnPlaylistList.get(i).getTracklist().get(j).getId()) {
+                if(song.getId() == PlaylistList.get(i).getTracklist().get(j).getId()) {
                     
-                    songsOnPlaylistList.get(i).removeSong(songsOnPlaylistList.get(i).getTracklist().get(j));
-                    updateListOfPlaylist(songsOnPlaylistList.get(i));
+                    PlaylistList.get(i).removeSong(PlaylistList.get(i).getTracklist().get(j));
+                    updateListOfPlaylist(PlaylistList.get(i));
                 }
             }
-        }
+        } */
     }
 
     private void updateListOfPlaylist(Playlist playlist) {
         
-        int index = songsOnPlaylistList.indexOf(playlist);
-        songsOnPlaylistList.set(index, playlist);
+        int index = PlaylistList.indexOf(playlist);
+        PlaylistList.set(index, playlist);
         setPlaylistSongs(playlist);
         
     }
 
     private void setPlaylistSongs(Playlist playlist) {
         
-       songsOnPlaylistList.setAll(playlist.getTracklist());
+       playlistSongs.setAll(playlist.getTracklist());
         
     }
     

@@ -7,7 +7,13 @@ package dal.daos;
 
 import be.Playlist;
 import be.Song;
-import com.sun.jdi.connect.spi.Connection;
+import java.sql.Connection;
+import dal.DbConnectionProvider;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -15,7 +21,17 @@ import com.sun.jdi.connect.spi.Connection;
  */
 public class PlaylistSongsDAO {
 
-    public void deleteSongFromAllPlaylist(Song song) {
+    private DbConnectionProvider connector;
+    
+    public PlaylistSongsDAO() {
+        try {
+            connector = new DbConnectionProvider();
+        } catch (IOException ex) {
+            Logger.getLogger(PlaylistSongsDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+}
+    
+    public void deleteSongFromAllPlaylist(Song song) throws SQLException {
         String sqlStatement = "DELETE FROM PlaylistSongs WHERE songId=?";
         try(Connection con = connector.getConnection();
                 PreparedStatement statement = con.prepareStatement(sqlStatement))
@@ -25,7 +41,7 @@ public class PlaylistSongsDAO {
         }
     }
 
-    public void deleteSongFromPlaylist(Playlist playlist, Song song) {
+    public void deleteSongFromPlaylist(Playlist playlist, Song song) throws SQLException {
         String sqlStatement = "DELETE FROM PlaylistSongs WHERE playlistId=? and songId=?";
         try(Connection con = connector.getConnection();
                 PreparedStatement statement = con.prepareStatement(sqlStatement))

@@ -7,7 +7,7 @@ package dal;
 
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
-import com.sun.jdi.connect.spi.Connection;
+import java.sql.Connection;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -34,7 +34,7 @@ public class DbConnectionProvider
         ds.setPassword("CSe19B_17");
     }
     
-    public java.sql.Connection getConnection() throws SQLServerException
+    public Connection getConnection() throws SQLServerException
     {
         return ds.getConnection();
     }

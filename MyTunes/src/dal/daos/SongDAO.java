@@ -25,11 +25,13 @@ public class SongDAO {
     
     private final DbConnectionProvider connectionPool;
     private PlaylistSongsDAO playlistSongsDao;
+    private DbConnectionProvider connector;
 
     public SongDAO() throws IOException
     {
         connectionPool = new DbConnectionProvider();
         playlistSongsDao = new PlaylistSongsDAO();
+        connector = new DbConnectionProvider();
     }
 
     public Song createSong (String title, String artist, String category, int length, String path) throws Exceptions
@@ -62,6 +64,7 @@ public class SongDAO {
     
     public void deleteSong (Song song) throws Exceptions, SQLException
     {
+        System.out.println(song + "inside");
         playlistSongsDao.deleteSongFromAllPlaylist(song);
         String sqlStatement = "DELETE FROM Songs WHERE id=?";
         try(Connection con = connector.getConnection();

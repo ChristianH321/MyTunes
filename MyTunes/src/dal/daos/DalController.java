@@ -8,13 +8,14 @@ package dal.daos;
 import be.Playlist;
 import be.Song;
 import dal.daos.exceptions.Exceptions;
+import java.io.IOException;
 import java.sql.SQLException;
 
 /**
  *
  * @author chris
  */
-public class dalController {
+public class DalController {
     
     private SongDAO songDao;
     private PlaylistDAO playlistDao;
@@ -22,8 +23,14 @@ public class dalController {
     
     
     public void deleteSong(Song song) throws Exceptions, SQLException {
-        
+        System.out.println(song + "Outside");
         songDao.deleteSong(song);
+    }
+
+    public DalController() throws IOException {
+        this.songDao = new SongDAO();
+        this.playlistDao = new PlaylistDAO();
+        this.playlistSongsDao = new PlaylistSongsDAO();
     }
     
     public void deleteSongFromPlaylist(Playlist playlist, Song song) {

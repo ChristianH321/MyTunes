@@ -7,10 +7,13 @@ package bll;
 
 import be.Song;
 import dal.daos.SongDAO;
-import dal.daos.dalController;
+import dal.daos.DalController;
 import dal.daos.exceptions.Exceptions;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -18,14 +21,13 @@ import java.util.List;
  */
 public class BllManager {
 
-    public static void deleteSong(Song song) throws Exceptions, Exceptions, Exceptions {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     private SongDAO songs;
+    private DalController dalController;
     
     public BllManager() throws IOException {
         songs = new SongDAO();
+        dalController = new DalController();
     }
     
     public List<Song> getAllSongs() throws Exceptions {
@@ -34,7 +36,13 @@ public class BllManager {
     
     public void deleteSong(Song song) {
         
-        dalController.deleteSong(song);
+        try {
+            dalController.deleteSong(song);
+        } catch (Exceptions ex) {
+            Logger.getLogger(BllManager.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(BllManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }

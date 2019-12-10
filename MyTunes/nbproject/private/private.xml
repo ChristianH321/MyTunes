@@ -10,11 +10,12 @@
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/PlaylistDAO.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/view/FXMLDocument.fxml</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/DbConnectionProvider.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/model/Model.java</file>
+            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/DalController.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/gui/controller/NewEditSongController.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/SongDAO.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/be/Song.java</file>
-            <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/dalController.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/be/Playlist.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/bll/BllManager.java</file>
             <file>file:/C:/Users/chris/OneDrive/Dokumente/GitHub/MyTunes/MyTunes/src/dal/daos/PlaylistSongsDAO.java</file>

@@ -189,9 +189,6 @@ public class FXMLDocumentController implements Initializable {
             
             model.deleteSong(selectedSong);
             songList.getSelectionModel().clearSelection();
-            btnMoveSongtoPlaylist.setDisable(false);
-            btnEditSong.setDisable(false);
-            btnDeleteSong.setDisable(false);
             
             
         

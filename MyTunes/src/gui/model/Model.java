@@ -45,17 +45,7 @@ public class Model {
 
     private void deleteSongFromAllPlaylist(Song song) {
         
-   /*     for(int i = 0; i < PlaylistList.size(); i++) {
-            
-            for (int j = 0; j < PlaylistList.get(i).getTracklist().size(); j++) {
-                
-                if(song.getId() == PlaylistList.get(i).getTracklist().get(j).getId()) {
-                    
-                    PlaylistList.get(i).removeSong(PlaylistList.get(i).getTracklist().get(j));
-                    updateListOfPlaylist(PlaylistList.get(i));
-                }
-            }
-        } */
+   
     }
 
     private void updateListOfPlaylist(Playlist playlist) {

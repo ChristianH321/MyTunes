@@ -12,6 +12,7 @@ import dal.daos.exceptions.Exceptions;
 import java.io.IOException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.media.MediaPlayer;
 
 /**
  *
@@ -29,6 +30,7 @@ public class Model {
         manager = new BllManager();
         songList.addAll(manager.getAllSongs());
         playlistSongs = FXCollections.observableArrayList();
+        
     }
     
 
@@ -62,6 +64,11 @@ public class Model {
         
     }
     
+    public void play() {
+       
+        MediaPlayer.Status.PLAYING;
+    
+    }
     
     
 }

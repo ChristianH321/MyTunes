@@ -26,6 +26,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 /**
@@ -92,6 +94,13 @@ public class FXMLDocumentController implements Initializable {
         model = new Model();
     }
     
+    public MediaPlayer(Media songList) {
+        status = new MediaPlayer();
+        
+        
+        
+    }
+    
     
     
     
@@ -116,9 +125,6 @@ public class FXMLDocumentController implements Initializable {
     private void displaysSong(ActionEvent event) {
     }
 
-    @FXML
-    private void clickPlay(MouseEvent event) {   
-    }
 
     @FXML
     private void clickPreviousSong(MouseEvent event) {
@@ -263,6 +269,11 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void clickMinimize(MouseEvent event) {
+    }
+
+    @FXML
+    private void onPlaying(MouseEvent event) {
+        
     }
     
 }

@@ -100,6 +100,11 @@
             <Image url="@../../Resources/minimize.png" />
          </image>
       </ImageView>
-      <TextField fx:id="fieldDisplaySong" layoutX="274.0" layoutY="100.0" onAction="#displaysSong" prefHeight="26.0" prefWidth="214.0" text="(Song name) is Playing" />
+      <TextField fx:id="fieldDisplaySong" layoutX="261.0" layoutY="136.0" onAction="#displaysSong" prefHeight="26.0" prefWidth="214.0" text="(Song name) is Playing" />
+      <ImageView fitHeight="133.0" fitWidth="186.0" layoutX="262.0">
+         <image>
+            <Image url="@../../Resources/SoundSpot%20-%20Feel%20The%20Music.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

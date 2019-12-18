@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- *
+ * The DalController class is for all operations on database.
  * @author chris
  */
 public class DalController {
@@ -27,6 +27,10 @@ public class DalController {
         songDao.deleteSong(song);
     }
 
+    /**
+     * This is the constructor and it creates Data Access Objects.
+     */
+    
     public DalController() throws IOException {
         this.songDao = new SongDAO();
         this.playlistDao = new PlaylistDAO();

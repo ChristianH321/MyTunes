@@ -31,7 +31,9 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 /**
- *
+ * This class is a controller for FXMLDocument.fxml in the gui.view folder.
+ * It performs all actions connected with playing the song.
+ * Furthermore, is it responsible for displaying views for operating on songs and playlists.
  * @author chris
  */
 public class FXMLDocumentController implements Initializable {
@@ -90,6 +92,10 @@ public class FXMLDocumentController implements Initializable {
     
     private Model model;
 
+    /**
+     * Creates a connection with Model in GUI.model folder.
+     * 
+     */
     public FXMLDocumentController() throws IOException, Exceptions {
         model = new Model();
     }

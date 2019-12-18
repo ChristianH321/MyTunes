@@ -12,8 +12,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- *
- * @author chris
+ * The code MyTunes class is an engine of our application. It runs the whole program and sets the initial view.
+ * @author Christian, Frederik, Mario, Roula and Tienesh
  */
 public class MyTunes extends Application {
     

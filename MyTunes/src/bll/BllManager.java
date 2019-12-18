@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * The BllManager class is responsible for conncetion between the GUI and the DAL
  * @author chris
  */
 public class BllManager {

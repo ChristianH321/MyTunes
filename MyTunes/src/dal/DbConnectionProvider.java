@@ -14,7 +14,7 @@ import java.util.Properties;
 
 /**
  * The {@code DbConnectionProvider} class is responsible for
- * establishing connection with a database.
+ * establishing connection with the database.
  *
  * @author chris
  */
@@ -33,6 +33,14 @@ public class DbConnectionProvider
         ds.setUser("CSe19B_17");
         ds.setPassword("CSe19B_17");
     }
+    
+    /**
+     * Returns Connection object which is able to
+     * provide informations about database.
+     * 
+     * @return The connection with database.
+     * @throws SQLServerException if connection with database cannot be established.
+     */
     
     public Connection getConnection() throws SQLServerException
     {

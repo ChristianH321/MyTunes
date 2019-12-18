@@ -66,30 +66,58 @@ public class Playlist {
         
     }
 
+    /*
+    The purpose of this method is get the id. And return the id.
+    */
+    
     public int getId() {
         return id;
     }
 
+    /*
+    The purpose of this method is get the name. And return the name of the song.
+    */
+    
     public String getName() {
         return name;
     }
 
+    /*
+    The purpose of this method is get the number of songs. And it will return the number of songs.
+    */
+    
     public int getNumberOfSongs() {
         return numberOfSongs;
     }
 
+    /*
+    The purpose of this method is get the total length of songs.
+    */
+    
     public int getTotalLength() {
         return totalLength;
     }
-
+    /*
+    The purpose of this method is get the tracklist and return the tracklist
+    @param songs The list of songs to set.
+    
+    */
     public List<Song> getTracklist() {
         return tracklist;
     }
 
+    /*
+    The purpose of this method is to set the name within the parameters.
+    */
+    
     public void setName(String name) {
         this.name = name;
     }
 
+
+    /*
+    The purpose of this method is get the total length of songs.
+    */    
     public void setTracklist(List<Song> tracklist) {
         this.tracklist = tracklist;
     }

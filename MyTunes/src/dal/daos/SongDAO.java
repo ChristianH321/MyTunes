@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * The SongDAO class is responsible for operations on the Songs table in our database.
  * @author chris
  */
 public class SongDAO {
@@ -27,6 +27,10 @@ public class SongDAO {
     private PlaylistSongsDAO playlistSongsDao;
     private DbConnectionProvider connector;
 
+    /**
+    * Creates connector with database.
+    */
+    
     public SongDAO() throws IOException
     {
         connectionPool = new DbConnectionProvider();
@@ -34,6 +38,18 @@ public class SongDAO {
         connector = new DbConnectionProvider();
     }
 
+    /**
+    * Creates a song in database.
+    * 
+    * @param The songs title.
+    * @param The songs artist.
+    * @param The songs category.
+    * @param The songs artist.
+    * @param path The path to the file with song.
+    * @param length The length of the song
+    * @throws Exceptions if connection with database cannot be established
+    */
+    
     public Song createSong (String title, String artist, String category, int length, String path) throws Exceptions
     {
         String sql = "INSERT INTO Songs (title, artist, category, length, path) VALUES(?,?);";
@@ -61,6 +77,13 @@ public class SongDAO {
         }
     }
 
+    /**
+     * Uses object of PlaylistSongsDAO class to delete song from
+     * all playlists that contain this song and then completely deletes song from database.
+     * 
+     * @param song The song to delete.
+     * @throws SQLException if connection with database cannot be established.
+     */
     
     public void deleteSong (Song song) throws Exceptions, SQLException
     {
@@ -75,6 +98,13 @@ public class SongDAO {
         }
     }
 
+     /**
+     * Gets all songs from database for given user.
+     * 
+     * @param user The songs user.
+     * @return List with songs.
+     * @throws SQLException if connection with database cannot be established.
+     */
     
     public List<Song> getAllSongs() throws Exceptions
     {

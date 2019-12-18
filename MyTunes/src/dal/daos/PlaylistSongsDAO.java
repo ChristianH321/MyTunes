@@ -16,12 +16,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * The PlaylistSongsDAO class is responsible for the operations on PlaylistSongs table in our databse.
  * @author chris
  */
 public class PlaylistSongsDAO {
 
     private DbConnectionProvider connector;
+    
+    /**
+     * Creates connector with database.
+     */
     
     public PlaylistSongsDAO() {
         try {

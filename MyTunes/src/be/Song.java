@@ -41,43 +41,91 @@ public class Song {
         this.path = path;
         
     }
-
+     /*
+     Returns ID of the song.
+     @return the id of the song
+    */
     public int getId() {
         return id;
     }
-
+    
+/*
+     Returns title of the song.
+     @return the title of the song
+    */
+    
     public String getTitle() {
         return title;
     }
 
+    /*
+     Sets the title of the song.
+     @param the title of the song
+    */
+    
     public void setTitle(String title) {
         this.title = title;
     }
 
+    /*
+     Returns artist of the song.
+     @return the artist of the song
+    */
+    
     public String getArtist() {
         return artist;
     }
 
+    /*
+     Sets artist of the song.
+     @param artist The artist to set.
+    */
+    
     public void setArtist(String artist) {
         this.artist = artist;
     }
 
+    /*
+     Returns category of the song.
+     @return the category of the song
+    */
+    
     public String getCategory() {
         return category;
     }
 
+    /*
+     Sets category of the song
+     @param category The category to set.
+    */
+    
     public void setCategory(String category) {
         this.category = category;
     }
 
+    /*
+     Returns length of the song.
+     @return the length of the song
+    */
+    
     public int getLength() {
         return length;
     }
+    
+    /*
+     Returns the path of the song.
+     @return The path to song.
+    */
     
     public String getPath() {
         return path;
     }
 
+    /*
+     Sets path of the song.
+     @param path The path to set.
+    */
+    
     public void setPath(String path) {
         this.path = path;
     }

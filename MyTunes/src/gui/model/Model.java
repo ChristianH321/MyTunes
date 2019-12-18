@@ -38,6 +38,11 @@ public class Model {
         return songList;
     }
     
+    
+    /*
+    The purpose of this method is to delete the selected song in the song list.
+    */
+    
     public void deleteSong(Song song) throws Exceptions {
         
         manager.deleteSong(song);

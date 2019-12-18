@@ -94,12 +94,7 @@ public class FXMLDocumentController implements Initializable {
         model = new Model();
     }
     
-    public MediaPlayer(Media songList) {
-        status = new MediaPlayer();
-        
-        
-        
-    }
+    
     
     
     

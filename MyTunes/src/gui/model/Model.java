@@ -64,11 +64,7 @@ public class Model {
         
     }
     
-    public void play() {
-       
-        MediaPlayer.Status.PLAYING;
     
-    }
     
     
 }
